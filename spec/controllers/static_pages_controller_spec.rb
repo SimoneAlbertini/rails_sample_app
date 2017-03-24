@@ -16,4 +16,9 @@ RSpec.describe StaticPagesController, type: :controller do
     it_should_be_http_ok :about
     it_should_render_correct_template :about
   end
+
+  describe "get #contacts" do
+    it_should_be_http_ok :contacts
+    it_should_render_correct_template :contacts
+  end
 end
