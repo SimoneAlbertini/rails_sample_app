@@ -13,7 +13,7 @@ RSpec.feature 'Static Pages', type: :feature do
 
    scenario 'home page' do
      visit root_path
-     expect(page).to have_title("Home #{@base_title}")
+     expect(page.title).to eq("Ruby on Rails Tutorial Sample App")
      expect(title_of_content).to have_text('Sample App')
    end
 
