@@ -12,7 +12,7 @@ RSpec.feature 'Static Pages', type: :feature do
    end
 
    scenario 'home page' do
-     visit static_pages_home_path
+     visit root_path
      expect(page).to have_title("Home #{@base_title}")
      expect(title_of_content).to have_text('Sample App')
    end
